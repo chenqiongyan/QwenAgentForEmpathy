@@ -9,7 +9,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 8080;
 
 /* ====== 环境变量 ====== */
-const API_KEY = process.env.QenAgent_API_KEY; 
+const API_KEY = process.env.QwenAgent_API_KEY; 
 const APP_ID = process.env.QwenAgent_APP_ID;
 
 const DASH_URL = `https://dashscope.aliyuncs.com/api/v1/apps/${APP_ID}/completion`;
