@@ -9,8 +9,8 @@ app.use(express.json());
 const PORT = process.env.PORT || 12314;
 
 /* ====== 环境变量 ====== */
-const API_KEY = process.env.API_KEY; // 从 Railway 环境变量读
-const APP_ID = process.env.APP_ID;
+const API_KEY = process.env.QenAgent_API_KEY; 
+const APP_ID = process.env.QwenAgent_APP_ID;
 
 const DASH_URL = `https://dashscope.aliyuncs.com/api/v1/apps/${APP_ID}/completion`;
 
