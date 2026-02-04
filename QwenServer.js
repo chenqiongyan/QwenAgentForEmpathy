@@ -93,6 +93,10 @@ app.post("/chat", async (req, res) => {
     });
 
     console.log("API 响应状态:", response.status);
+    console.log("Upstream API returned:", text);
+
+    // 再解析成 JSON
+    const data = JSON.parse(text);
     
     if (!response.ok) {
       const errorText = await response.text();
